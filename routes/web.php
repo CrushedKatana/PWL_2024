@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\PhotoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // Basic Routing 
-// Route::get('/hello', function () {
-//     return 'Hello World';
+// Route::get('/hello', [WelcomeController::class,'hello']);
+
 
 // Route::get('/World', function () {
 //     return 'World';  
@@ -81,3 +83,4 @@ use Illuminate\Support\Facades\Route;
 // View Routes
 // Route::view('/welcome', 'welcome');
 // Route::view('/welcome', 'welcome', ['name' => 'Taylor']);
+Route::resource('photos', PhotoController::class);
