@@ -103,15 +103,15 @@ use App\Http\Controllers\PhotoController;
 // Route::get('/greeting', [WelcomeController::class,
 // 'greeting']);
 
-use App\Http\Controllers\PageController;
+// use App\Http\Controllers\PageController;
 
-Route::get('/', [PageController::class, 'index']);
-Route::get('/about', [PageController::class, 'about']);
-Route::get('/articles/{id}', [PageController::class, 'articles']);
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\ArticleController;
+// Route::get('/', [PageController::class, 'index']);
+// Route::get('/about', [PageController::class, 'about']);
+// Route::get('/articles/{id}', [PageController::class, 'articles']);
+// use App\Http\Controllers\HomeController;
+// use App\Http\Controllers\AboutController;
+// use App\Http\Controllers\ArticleController;
 
-Route::get('/', HomeController::class);
-Route::get('/about', AboutController::class);
-Route::get('/articles/{id}', ArticleController::class);
+// Route::get('/', HomeController::class);
+// Route::get('/about', AboutController::class);
+// Route::get('/articles/{id}', ArticleController::class);
